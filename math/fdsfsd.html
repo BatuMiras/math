@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>www.btdersleri.com</title>
+<script language="javascript">
+
+function hesapla()
+{
+    let x=document.querySelector("#kutu1").value;
+	let y=document.querySelector("#kutu2").value;
+	let z=x*x+2*x*y+y*y;
+	document.querySelector("#sonuc").innerHTML=z;
+}
+	
+</script>
+<style type="text/css">
+</style></head>
+
+<body>
+<p>x<sup>2</sup> + 2xy +y<sup>2</sup></p>
+<p>Kutulara x ve y değerlerini giriniz.</p>
+<p>
+  x:
+  <input type="text" name="kutu1" id="kutu1">
+</p>
+<p>y:
+  <input type="text" name="kutu2" id="kutu2">
+</p>
+<button onclick="hesapla()" value="a">Hesapla</button>
+<p>Sonuç: <b id="sonuc"></b>
+</p>
+
+</body>
+</html>
